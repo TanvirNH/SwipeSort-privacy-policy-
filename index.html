@@ -266,6 +266,61 @@
   .btn-secondary svg { width: 13px; height: 13px; flex: none; color: #C084FC; }
 
   /* ── Early supporter callout (TEMPORARY — remove before archiving) ── */
+  .early-supporter {
+    background: linear-gradient(135deg, rgba(250,204,21,0.08) 0%, rgba(251,146,60,0.06) 100%);
+    border: 1.5px solid rgba(250, 204, 21, 0.35);
+    border-radius: var(--radius-lg);
+    padding: 28px 28px 22px;
+    box-shadow: 0 0 0 4px rgba(250,204,21,0.04);
+    position: relative;
+  }
+  .early-supporter::before {
+    content: "⚠ TEMPORARY — REMOVE BEFORE ARCHIVING";
+    position: absolute;
+    top: -11px; left: 50%; transform: translateX(-50%);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    padding: 3px 12px;
+    border-radius: 999px;
+    background: rgba(250,204,21,0.9);
+    color: #1a1000;
+    white-space: nowrap;
+  }
+  .early-supporter h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 8px;
+    color: #FDE68A;
+    background: none;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    -webkit-text-fill-color: unset;
+  }
+  .early-supporter p, .early-supporter li { color: rgba(253,230,138,0.85); font-size: 15.5px; }
+  .early-supporter p { margin: 10px 0; }
+  .early-supporter li { margin: 7px 0; }
+  .early-supporter strong { color: #FDE68A; }
+  .early-supporter ol { padding-left: 22px; margin: 10px 0 16px; }
+  .early-supporter li::marker { color: rgba(253,230,138,0.45); }
+  .early-supporter .btn-claim {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #F59E0B, #F97316);
+    color: #fff;
+    font: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: none !important;
+    transition: opacity .15s, transform .15s;
+    margin-top: 10px;
+  }
+  .early-supporter .btn-claim:hover { opacity: 0.88; transform: translateY(-1px); }
+  .early-supporter .btn-claim svg { width: 15px; height: 15px; flex: none; }
 
   footer {
     margin-top: 48px;
@@ -344,8 +399,6 @@
         <span class="pill ok">Local notifications only</span>
       </div>
     </section>
-
-    <!-- EARLY SUPPORTER OFFER — TEMPORARY SECTION, REMOVE BEFORE ARCHIVING -->
 
     <!-- SCOPE -->
     <section class="card" id="scope">
@@ -462,11 +515,7 @@
     <!-- PURCHASES -->
     <section class="card" id="purchases">
       <h2><span class="num">7</span>Purchases &amp; Subscriptions</h2>
-      <p>SwipeSort Pro is available as an auto-renewing subscription through Apple&rsquo;s in-app purchase system:</p>
-      <ul>
-        <li><strong>Monthly</strong> &mdash; $3.99/month with a 7-day free trial</li>
-        <li><strong>Yearly</strong> &mdash; $19.99/year</li>
-      </ul>
+      <p>SwipeSort Pro is available as an auto-renewing subscription through Apple&rsquo;s in-app purchase system.</p>
       <p>All transactions are processed by Apple via StoreKit and are subject to the <a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank" rel="noopener noreferrer">Apple Media Services Terms and Conditions</a>. We do not receive your name, billing address, payment instrument, or Apple ID &mdash; only an anonymous, app-scoped entitlement signal indicating whether your subscription is active.</p>
       <p>Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period. You can manage or cancel your subscription at any time in <em>iOS Settings &rarr; [Your Name] &rarr; Subscriptions</em>, or request a refund at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer">reportaproblem.apple.com</a>.</p>
     </section>
@@ -529,10 +578,6 @@
       </ul>
       <p>Because SwipeSort stores your preferences and statistics only on your device, you can exercise access, rectification, erasure, and portability rights for those records directly: use <em>Settings &rarr; Reset Stats</em> or uninstall the App to remove all local data.</p>
       <p>For data processed off-device (subscription entitlements, AdMob ad data), please contact us using the button below and we will work with Apple and Google to honor your request to the extent it concerns data they process on our behalf.</p>
-      <a class="btn-secondary" href="mailto:tanvir4talk+appsupport@gmail.com?subject=SwipeSort%20Privacy%20Rights%20Request" aria-label="Submit a privacy rights request">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 7l10 6 10-6"/></svg>
-        Submit a Rights Request
-      </a>
     </section>
 
     <!-- CALIFORNIA -->
@@ -570,14 +615,14 @@
       </a>
       <p style="margin-top: 14px;">We aim to respond within 14 business days, and within the deadlines required by applicable law for verifiable rights requests.</p>
       <div class="highlight">
-        Need help with the App itself? Visit our <a href="../Support/index.html">Support page</a> for FAQs and troubleshooting guides.
+        Need help with the App itself? Visit our <a href="https://tanvirnh.github.io/SwipeSort-support-/">Support page</a> for FAQs and troubleshooting guides.
       </div>
     </section>
 
     <footer>
-      <p>&copy; <span id="yr">2026</span> Tanvir N Hasan. All rights reserved.</p>
+      <p>&copy; <span id="yr">&copy;</span> Tanvir N Hasan &middot; SwipeSort</p>
       <div class="footer-links">
-        <a href="../LandingPage/index.html">SwipeSort</a>
+        <a href="https://tanvirnh.github.io/SwipeSort-/">SwipeSort</a>
         <a href="https://tanvirnh.github.io/SwipeSort-support-/">Support</a>
         <a href="https://tanvirnh.github.io/SwipeSort-privacy-policy-/">Privacy Policy</a>
       </div>
